@@ -13,11 +13,6 @@ def identify_gender():
               len(data[data['gender'] == 2]), 'мужчин')
 
 def identify_alco():
-    if len(data[(data['gender'] == 1) & (data['alco'] == 0)]) / len(data[data['gender'] == 1]) > \
-       len(data[(data['gender'] == 2) & (data['alco'] == 0)]) / len(data[data['gender'] == 2]):
-        print('Мужчины')
-    else:
-        print('Женщины')
     print(pd.crosstab(data['gender'], data['alco']))
 
 def identify_proc_smoke():
