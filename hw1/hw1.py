@@ -52,13 +52,13 @@ def cleaning():
             clean_data['weight'] <= clean_data['weight'].quantile(.975))]
     print(((len(data) - len(clean_data)) / len(data)) * 100)
 
-#identify_gender()
-#identify_alco()
-#identify_proc_smoke()
-#indetify_median_smoke()
-#calculation_risk_death()
-#bmi()
-#cleaning()
+identify_gender()
+identify_alco()
+identify_proc_smoke()
+indetify_median_smoke()
+calculation_risk_death()
+bmi()
+cleaning()
 #print(data)
 
 
