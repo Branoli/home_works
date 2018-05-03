@@ -37,7 +37,7 @@ def bmi():
     data['bmi'] = data['weight'] / ((data['height']/100) ** 2)
     print(data['bmi'].median(), 'медианный')
     print(data[data['gender'] == 1]['bmi'].mean(),
-          data[data['gender'] == 2]['bmi'].mean(), 'женщина, мужик')
+          data[data['gender'] == 2]['bmi'].mean(), 'женщина, man')
     print(data[(data['cardio'] == 1)]['bmi'].mean(),
           data[(data['cardio'] == 0)]['bmi'].mean(), 'больной, здоровый')
     print(data[(data['cardio'] == 0) & (data['alco'] == 0) & (data['gender'] == 2)]['bmi'].mean(),
